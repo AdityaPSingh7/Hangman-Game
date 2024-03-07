@@ -14,7 +14,7 @@ display = []
 for _ in range(word_length):
     display += "_"
     
-    
+print(f"\n{' '.join(display)}")
 lives=6
 print()
 while end_of_game:
@@ -29,9 +29,9 @@ while end_of_game:
           display[position] = letter
           t=1
     if t==0:
-      lives-=1
-      print("Wrong choice")
-      print(f"Remaining lives - {lives}")
+       lives-=1
+       print("Wrong choice")
+       print(f"Remaining lives - {lives}")
     if lives==0:
       print("\n\nYOU LOSE")
       end_of_game=False
